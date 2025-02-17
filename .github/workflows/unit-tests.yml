@@ -1,0 +1,27 @@
+name: unit-tests
+
+on:
+    pull_request:
+    push:
+        branches: [main]
+
+jobs:
+  ci:
+    name: "run unit tests"
+    strategy:
+      fail-fast: true
+      matrix:
+        os:  ["ubuntu-latest", "windows-latest", "macOS-latest"]
+        go:  ['1.18']
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: "checkout"
+      uses: actions/checkout@v4
+    - name: "fetch unshallow"
+      run: git fetch --prune --unshallow
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: ${{ matrix.go }}
+    - name: "test"
+      run: "go test ./..."

@@ -1,0 +1,5 @@
+*.txt
+cmd/safetext/safetext
+dist/*
+release/*
+cmd/safetext/digipres
