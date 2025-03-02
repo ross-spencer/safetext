@@ -7,7 +7,7 @@ import (
 
 var example string = "supercalifragilist\u2060icexpialidotious"
 
-func ExampleIdentifyNonSafeChara() {
+func ExampleIdentifyNonSafeChars() {
 	analysis := DefaultConfig()
 	res, err := IdentifyNonSafeChars(analysis, example)
 	if err == nil {
