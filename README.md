@@ -16,7 +16,7 @@ I have started some writing on these subjects. Check out the blogs below.
 ## safetext-json
 
 [safetext-json][st-2] captures all of the character classes identified by
-Zach Ayasan, David Jacobson, and Neatnik. Hopefully exporting the list
+Zach Aysan, David Jacobson, and Neatnik. Hopefully exporting the list
 means it can provide a central resource that can be updated more thoroughly
 by users.
 
