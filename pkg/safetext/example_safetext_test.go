@@ -1,15 +1,17 @@
-package safetext
+package safetext_test
 
 import (
 	"encoding/json"
 	"fmt"
+
+	"github.com/ross-spencer/safetext/pkg/safetext"
 )
 
 var example string = "supercalifragilist\u2060icexpialidotious"
 
 func ExampleIdentifyNonSafeChars() {
-	analysis := DefaultConfig()
-	res, err := IdentifyNonSafeChars(analysis, example)
+	analysis := safetext.DefaultConfig()
+	res, err := safetext.IdentifyNonSafeChars(analysis, example)
 	if err == nil {
 		// handle err
 	}
