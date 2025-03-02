@@ -13,11 +13,14 @@ I have started some writing on these subjects. Check out the blogs below.
 [AI-1]:
     https://exponentialdecay.co.uk/blog/informed-consent-considering-steganographic-techniques-to-fingerprint-generative-ai-output
 
-## safetext JSON
+## safetext-json
 
-safetext-JSON captures all of the character classes identified by Zach Ayasan,
-David Jacobson, and Neatnik. Hopefully exporting the list means it can
-provide a central resource that can be updated more thoroughly by users.
+[safetext-json][st-2] captures all of the character classes identified by
+Zach Ayasan, David Jacobson, and Neatnik. Hopefully exporting the list
+means it can provide a central resource that can be updated more thoroughly
+by users.
+
+[st-2]: https://github.com/ross-spencer/safetext-json
 
 ## Disclaimer
 
