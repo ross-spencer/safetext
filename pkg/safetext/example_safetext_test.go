@@ -1,14 +1,18 @@
 package safetext
 
-import "fmt"
+import (
+	"encoding/json"
+	"fmt"
+)
 
 var example string = "supercalifragilist\u2060icexpialidotious"
 
-func ExampleIdentifyNonSafeChars() {
+func ExampleIdentifyNonSafeChara() {
 	analysis := DefaultConfig()
 	res, err := IdentifyNonSafeChars(analysis, example)
 	if err == nil {
 		// handle err
 	}
-	fmt.Println(res.Line)
+	resJSON, _ := json.MarshalIndent(res, "", "  ")
+	fmt.Println(string(resJSON))
 }
